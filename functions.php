@@ -117,8 +117,14 @@ require get_template_directory() . '/inc/bootstrap-walker.php';
 /**
  * Plugin Activation
  */
-require get_template_directory() . '/plugin-activation/install-plugins.php';
+require get_template_directory() . '/plugin-activation/install-plugins.php'; 
+
 /**
  * Metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';
+
+/**
+ * CPT Settings
+ */
+require get_template_directory() . '/inc/cpt-settings.php';
