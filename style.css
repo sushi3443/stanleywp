@@ -6777,7 +6777,12 @@ a.text-dark:focus, a.text-dark:hover {
   padding: 3rem 0; }
 
 .about-columns {
-  padding: 5rem; }
+  padding: 3rem; }
+  .about-columns h4 {
+    margin-top: 1rem; }
+  @media (min-width: 768px) {
+    .about-columns h4 {
+      margin-top: 0; } }
 
 .project {
   margin-bottom: 2rem; }
