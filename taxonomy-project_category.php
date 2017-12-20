@@ -11,14 +11,15 @@ get_header(); ?>
 
 	<div class="container">
 			<div id="primary" class="content-area-full">
-				<main id="main" class="site-main row" role="main">
+				<main id="main" class="site-main" role="main">
 
 				<?php
 				if ( have_posts() ) : ?>
-
-					<header class="page-header col-md-12">
+				<div class="row justify-content-center text-center">
+					<header class="page-header col-md-6">
 						<h1><?php single_term_title(); ?></h1> 
 					</header><!-- .page-header -->
+				</div><!-- .row -->
 				<div class="row mt-5">
 					<?php
 					/* Start the Loop */
@@ -44,7 +45,7 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'none' );
 
 				endif; ?>
-				</div>
+				</div><!-- .row -->
 				</main><!-- #main -->
 			</div><!-- #primary -->
 	</div><!-- .container -->

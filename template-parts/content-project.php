@@ -15,7 +15,7 @@
 			<div class="col-md-6">
 
 				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 					<hr>
 				</header><!-- .entry-header -->
 

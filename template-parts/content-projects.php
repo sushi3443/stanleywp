@@ -14,13 +14,13 @@
 	<?php if ( has_post_thumbnail() ) : ?>
 			<div class="post-thumbnail">
 		    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		        <?php the_post_thumbnail('full', array('class' => 'rounded')); ?>
+		        <?php the_post_thumbnail(); ?>
 		    </a>
 		</div><!--  .post-thumbnail -->
 	<?php endif; ?>
 
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
 	</header><!-- .entry-header -->
 
 </article><!-- #post-## -->

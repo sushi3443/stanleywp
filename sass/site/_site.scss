@@ -5,7 +5,7 @@
 @import "layout/content-sidebar";
 
 /*--------------------------------------------------------------
-## Templates
+## Template
 --------------------------------------------------------------*/
 @import "templates/templates";
 
@@ -34,6 +34,13 @@
 --------------------------------------------------------------*/
 @import "footer";
 
+a {
+	transition: color 0.3s ease-in, background 0.3s ease-in;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
 
 .site-content {
 	word-break: break-word;

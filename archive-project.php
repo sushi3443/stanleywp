@@ -11,18 +11,23 @@ get_header(); ?>
 
 	<div class="container">
 			<div id="primary" class="content-area-full">
-				<main id="main" class="site-main row" role="main">
+				<main id="main" class="site-main" role="main">
 
 				<?php
 				if ( have_posts() ) : ?>
+					<div class="row justify-content-center text-center">
+						<header class="page-header col-md-6">
+ 
+							<?php $project_title = get_theme_mod( 'project_title', 'Projects' ); ?>
+ 
+							<?php if( $project_title != '') : ?>
+								<h1><?php echo $project_title; ?></h1>
+							<?php endif; ?>
+ 
+						</header><!-- .page-header -->
+					</div><!--  .row -->
 
-					<header class="page-header col-md-12">
-						<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="archive-description">', '</div>' );
-						?>
-					</header><!-- .page-header -->
-
+					<div class="row mt-5">
 					<?php
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();
@@ -47,7 +52,7 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'none' );
 
 				endif; ?>
-
+					</div><!- .row -->
 				</main><!-- #main -->
 			</div><!-- #primary -->
 	</div><!-- .container -->
