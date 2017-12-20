@@ -6766,9 +6766,9 @@ a.text-dark:focus, a.text-dark:hover {
       max-width: 33.33333333%; } }
 
 /*--------------------------------------------------------------
-## About Template
+## Templates
 --------------------------------------------------------------*/
-.about {
+.banner {
   background-color: #e9ecef; }
 
 /*--------------------------------------------------------------
@@ -6906,7 +6906,7 @@ a.text-dark:focus, a.text-dark:hover {
 .blog .site-header {
   margin-bottom: 0; }
 
-.page-template-about .site-header {
+.page-template-about .site-header, .page-template-home .site-header {
   margin-bottom: 0; }
 
 .navbar-brand a {
