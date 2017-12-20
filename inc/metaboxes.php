@@ -39,6 +39,28 @@ function cmb2_stanleywp_metaboxes() {
 		'type' => 'textarea',
 	) );
 
+	/**
+	 * Project Metabox
+	 */
+	$cmb_project = new_cmb2_box( array(
+		'id'            => 'project_metabox',
+		'title'         => __( 'Images', 'stanleywp' ),
+		'object_types'  => array( 'project', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Project Images
+	$cmb_project->add_field( array(
+		'name' => __( 'Images', 'stanleywp' ),
+		'desc' => __( 'Upload Images', 'stanleywp' ),
+		'id'   => $prefix . 'images',
+		'type' => 'file_list',
+	) );
+	
 	// Add other metaboxes as needed
 
 }
