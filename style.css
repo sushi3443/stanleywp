@@ -6869,7 +6869,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .blog .post {
   padding: 6rem 0; }
-  .blog .post:nth-child(odd) {
+  .blog .post:nth-child(even) {
     background: #e9ecef; }
 
 /*--------------------------------------------------------------

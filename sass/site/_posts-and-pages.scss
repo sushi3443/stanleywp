@@ -83,7 +83,7 @@
   .post {
     padding: 6rem 0;
     
-    &:nth-child(odd) {
+    &:nth-child(even) {
     background: $gray-200;
   }
 
