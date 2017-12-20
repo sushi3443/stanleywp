@@ -57,6 +57,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Author Avatar */
+.author-avatar {
+  span {
+    text-transform: uppercase;
+    color: $gray-600;
+    font-size: .8rem;
+    padding-left: .2rem;
+  }
+}
+
+
 /* Posts Navigation */
 .nav-links {
 	display: flex;
