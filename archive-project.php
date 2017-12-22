@@ -27,7 +27,7 @@ get_header(); ?>
 						</header><!-- .page-header -->
 					</div><!--  .row -->
 
-					<div class="row mt-5">
+					<div class="row mt-4">
 					<?php
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();

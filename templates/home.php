@@ -39,7 +39,7 @@ get_header(); ?>
 	</div><!-- container -->
 </div><!-- .abanner -->
 	
-<div class="container">
+<div class="container pt-5">
 	<div class="row mt-5 justify-content-center">
 		<?php 
 			// the query
